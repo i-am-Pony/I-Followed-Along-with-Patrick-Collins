@@ -32,6 +32,7 @@ contract StorageFactory {
         simpleStorageArray[_simpleStorageIndex].store(_simpleStorageNumber);
    }
 
+// this creates public functions to get the contract address / number
    function sfGet(uint256 _simpleStorageIndex) public view returns (uint256) {
         // return SimpleStorage(address(simpleStorageArray[_simpleStorageIndex])).retrieve();
         return simpleStorageArray[_simpleStorageIndex].retrieve();
